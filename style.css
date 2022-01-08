@@ -1,14 +1,19 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  }
 
-section {
-  height: 100vh;
+.bground{
   background-image: url(bg.jpg);
   background-size: 100vh 100vw;
+  }
+
+section {
+ 
+  size-adjust: 80vh 80vw;
   font-family: sans-serif;
+  
+  align-items: center;
 }
 
 .score {
@@ -146,5 +151,45 @@ div.fadeIn {
     transform: translateY(0px);
   }
 }
+
+@media(max-width: 800px) {
+  
+  .intro h1 {
+    font-size: 20px;
+  }
+
+  .score h2 {
+    font-size: 30px;
+  }
+
+  .score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .winner {
+    color: rgb(248, 9, 9);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+
+  .intro button,
+.match button {
+  width: 100px;
+  height: 40px;
+  background: none;
+  border: none;
+  color: rgb(224, 224, 224);
+  font-size: 15px;
+  background: rgb(253, 7, 7);
+  border-radius: 3px;
+  cursor: pointer;
+ }
+  
+}
+  
+
 
 /* By Aryan Singh */
