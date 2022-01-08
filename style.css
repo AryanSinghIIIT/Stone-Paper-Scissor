@@ -177,17 +177,38 @@ div.fadeIn {
 
   .intro button,
 .match button {
-  width: 100px;
+  width: 90px;
   height: 40px;
   background: none;
   border: none;
   color: rgb(224, 224, 224);
   font-size: 15px;
-  background: rgb(253, 7, 7);
+  background: rgb(3, 47, 241);
   border-radius: 3px;
   cursor: pointer;
- }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hands,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.player-hand {
+  height: 200px;
+  width: 200px;
   
+}
+
+.computer-hand {
+  height: 200px;
+  width: 200px;
+  
+}
 }
   
 
