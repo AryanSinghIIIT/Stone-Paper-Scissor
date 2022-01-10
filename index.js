@@ -26,7 +26,7 @@ const game = () => {
       });
     });
     //Computer Options
-    const computerOptions = ["rock", "paper", "scissors"];
+    const computerOptions = ["stone", "paper", "scissors"];
 
     options.forEach(option => {
       option.addEventListener("click", function() {
@@ -63,8 +63,8 @@ const game = () => {
       winner.textContent = "It is a tie";
       return;
     }
-    //Check for Rock
-    if (playerChoice === "rock") {
+    //Check for stone
+    if (playerChoice === "stone") {
       if (computerChoice === "scissors") {
         winner.textContent = "Player Wins";
         pScore++;
@@ -93,7 +93,7 @@ const game = () => {
     }
     //Check for Scissors
     if (playerChoice === "scissors") {
-      if (computerChoice === "rock") {
+      if (computerChoice === "stone") {
         winner.textContent = "Computer Wins";
         cScore++;
         updateScore();
